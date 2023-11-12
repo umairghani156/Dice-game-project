@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container" style="visibility: hidden;">
+      <div class="row-1">
+        <div class="col">
+          <h2 id="player1">Umair</h2>
+          <div class="number1">
+            <h1 id="total">0</h1>
+          </div>
+          <div class="currScore">
+            <p>CURRENT</p>
+            <p id="zeroNum" class="playNum1">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="col">
+          <h2 id="player2">Ahmed</h2>
+          <div class="number2">
+            <h1 id="total2">0</h1>
+          </div>
+          <div class="currScore">
+            <p>CURRENT</p>
+            <p id="zeroNum" class="playNum2">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middleCol" style="visibility: hidden;">
+      <div class="middleCol-child">
+        <div class="imgAndBtn">
+          <img src="./images/loading.png" alt="">
+          <button id="nGame">NEW GAME</button>
+        </div>
+        <img id="imgHey" src="./Assets/1.png" alt="" width="70px">
+        <div class="currBox">
+          <div class="diceAndBtn">
+            <img src="./images/dice.png" alt="" width="25px">
+            <button id="nGame2" onclick="myNum()">ROLL DICE</button>
+          </div>
+          <div class="arrowBox">
+            <img src="./images/arrow-box.webp" alt="" width="20px">
+            <button id="hold">HOLD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container2">
+    <div class="row">
+      <div class="col  bar">
+        <label for="">Player 1</label>
+        <input id="firstplayer" type="text">
+        <label for="">Player 2</label>
+        <input id="secondplayer" type="text"><br>
+        <button id="playBtn" onclick="playGame()">Play game</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+}
+body{
+    background-color: #eb86b8;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 604px;
+}
+.row-1{
+    width: 50%;
+    border-radius: 6px 0 0 6px;
+    background-color: #e5d4d4;
+}
+.row-2{
+    width: 50%;
+    border-radius: 0 6px 6px 0;
+    background-color: #eb86b8;
+    opacity: 0.9;
+}
+.col h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.number1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.number2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.currScore{
+    padding-top: 10px;
+    width: 140px;
+    height: 70px;
+    background-color: rgb(245, 39, 80);
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+.currBox{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+#imgHey{
+    margin-top: 10px;
+    margin-left: 16px;
+    transition: all 0.3s;
+}
+.middleCol{
+    width: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 46%;
+}
+.middleCol-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+}
+#hold{
+    margin-top: 10px;
+}
+#para{
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    margin: 2px auto;
+}
+.imgAndBtn{
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 7px 5px;
+}
+.imgAndBtn img{
+    width: 15px;
+}
+.imgAndBtn:hover{
+    background-color:#292C66 ;
+}
+#nGame{
+    border-radius: 10px;
+    font-size: 12px;
+    width: 80px;
+    border: none;
+    background-color: #fff;
+}
+#nGame:hover{
+background-color: #292C66;
+color: #fff;
+}
+.diceAndBtn{
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 4px 5px;
+    margin-top: 10px;
+}
+#nGame2{
+    border: none;
+    font-size: 12px;
+    padding-left: 3px;
+    background-color: #fff;
+}
+.diceAndBtn:hover{
+    background-color: #292C66;
+}
+#nGame2:hover{
+    background-color: #292C66;
+    color: #fff;
+}
+.arrowBox{
+    display: flex;
+    background-color: #fff;
+    width: 75px;
+    padding: 0 4px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.arrowBox img{
+    margin-left: 3px;
+}
+#hold{
+    border: none;
+    font-size: 12px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    margin-left: 2px;
+}
+#zeroNum{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+img{
+    border-radius: 10px;
+}
+.row{
+    background-color: white;
+    width: 240px;
+    height: 160px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%) scale(0.1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 3s;
+    visibility: hidden;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+}
+#playBtn{
+    border: 1px solid grey;
+    height: 25px;
+    border-radius: 7px;
+}
+#playBtn:hover{
+    background: linear-gradient(90deg, rgba(236,33,78,1) 21%, rgba(178,127,242,1) 100%);
+    color: white;
+    
+}
+.bar input {
+    margin-top: 4px;
+    outline: none;
+    border: none;
+    height: 20px;
+    margin-bottom: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 5px;
+}
+#popup{
+    visibility: visible;
+    top: 45%;
+    transform: translate(-50%,-50%) scale(1);
+}
+#checkBar{
+    transform: translate(-50%,-50%) scale(0.1);
+    left: 50%;
+    transition: all 3s;
+    visibility: hidden;
+}
+#total{
+    color: crimson;
+    font-family: sans-serif;
+}
+#total2{
+    color: crimson;
+    font-family: sans-serif;
+}
